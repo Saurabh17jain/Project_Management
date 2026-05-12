@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* =========================
+       Module & Environment
+    ========================= */
+    "module": "node16",
+    "moduleResolution": "node16",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "types": ["node"],
+
+    /* =========================
+       Output
+    ========================= */
+    "outDir": "./dist",
+    "rootDir": "./",
+
+    /* =========================
+       Interop (VERY IMPORTANT)
+    ========================= */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* =========================
+       Strictness
+    ========================= */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* =========================
+       Debugging
+    ========================= */
+    "sourceMap": true
+  },
+
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist", "../client"]
+}
